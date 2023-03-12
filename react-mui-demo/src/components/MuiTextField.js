@@ -18,6 +18,8 @@ export const MuiTextField = () => {
         </Stack>
 
         <Stack direction="row" spacing={2}>
+
+            {/* Textfield obligatoire avec erreur et texte d'aide */}
             <TextField
             label='Form Input'
             required
@@ -25,18 +27,23 @@ export const MuiTextField = () => {
             error={!value}
             helperText={!value ? 'required': 'Mémorisez votre nom d\'utilisateur'}
             />
+
+            {/* Textfield de mot de passe avec texte d'aide */}
             <TextField
             label='Password'
             type='password'
             helperText='Ne pas partager son mdp'
             disabled
             />
+
+            {/* Textfield en mode lecture seule */}
             <TextField
             label='Read Only'
             InputProps={{ readOnly: true }}
             />
         </Stack>
 
+        {/* Textfield avec préfixe ou suffixe */}
         <Stack direction="row" spacing={2}>
             <TextField
             label='Amount'
