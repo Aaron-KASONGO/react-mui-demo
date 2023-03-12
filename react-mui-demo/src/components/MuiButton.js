@@ -1,6 +1,19 @@
-import { Button, Stack } from "@mui/material";
+import { useState } from "react";
+import { Button, ButtonGroup, IconButton, Stack, ToggleButtonGroup, ToggleButton } from "@mui/material";
+
+import SendIcon from '@mui/icons-material/Send';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+
 
 function MuiButton() {
+    const [formats, setFormats] = useState(null);
+
+    const handlingChangeFormats = (event, update) => {
+        setFormats(update)
+    }
+
     return (
         <>
             <Stack spacing={4}>
@@ -26,6 +39,55 @@ function MuiButton() {
                     <Button variant="contained" size="small">Small</Button>
                     <Button variant="contained" size="medium">Medium</Button>
                     <Button variant="contained" size="large">Large</Button>
+                </Stack>
+
+                {/* Icon dans un bouton( avant ou après le texte) */}
+                <Stack spacing={2} direction="row">
+                    <Button variant="contained" startIcon={<SendIcon />} disableElevation>Send start</Button>
+                    <Button variant="contained" endIcon={<SendIcon />} disableRipple>Send end</Button>
+
+                    {/* Icon seule comme bouton */}
+                    <IconButton aria-label="Send" color="secondary">
+                        <SendIcon />
+                    </IconButton>
+                </Stack>
+
+                {/* Groupe de boutons */}
+                <Stack direction="row">
+                    <ButtonGroup
+                    orientation="vertical"
+                    variant="contained"
+                    color="secondary"
+                    size="small"
+                    aria-label="groupe boutons"
+                    >
+                        <Button>Start</Button>
+                        <Button>Center</Button>
+                        <Button>End</Button>
+                    </ButtonGroup>
+                </Stack>
+
+                {/* Toggle boutons */}
+                <Stack direction="row">
+                    <ToggleButtonGroup 
+                    aria-label="Format Group"
+                    value={formats}
+                    onChange={handlingChangeFormats}
+                    size="small"
+                    orientation="vertical"
+                    color="success"
+                    exclusive
+                    >
+                        <ToggleButton value="bold" aria-label="Bold Formal">
+                            <FormatBoldIcon />
+                        </ToggleButton>
+                        <ToggleButton value="italic" aria-label="Italic Formal">
+                            <FormatItalicIcon />
+                        </ToggleButton>
+                        <ToggleButton value="underlined" aria-label="Underlined Formal">
+                            <FormatUnderlinedIcon />
+                        </ToggleButton>
+                    </ToggleButtonGroup>
                 </Stack>
             </Stack>
         </>
