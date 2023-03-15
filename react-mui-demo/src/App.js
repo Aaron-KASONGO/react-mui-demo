@@ -2,6 +2,7 @@ import './App.css';
 import { MuiLayout } from './components/layouts/MuiLayout';
 import { MuiAccordion } from './components/MuiAccordion';
 import { MuiAutocomplete } from './components/MuiAutocomplete';
+import { MuiAvatar } from './components/MuiAvatar';
 import { MuiBottomNavigation } from './components/MuiBottomNavigation';
 import MuiButton from './components/MuiButton';
 import { MuiCard } from './components/MuiCard';
@@ -32,7 +33,8 @@ function App() {
       {/* <MuiNavBar /> */}
       {/* <MuiDrawer /> */}
       {/* <MuiSpeedDial /> */}
-      <MuiBottomNavigation />
+      {/* <MuiBottomNavigation /> */}
+      <MuiAvatar />
     </div>
   );
 }

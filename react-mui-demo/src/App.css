@@ -2,6 +2,10 @@ body {
   background-color: #eeeeee;
 }
 
+.App {
+  margin: 3rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
