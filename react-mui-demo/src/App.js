@@ -10,6 +10,7 @@ import { MuiNavBar } from './components/MuiNavBar';
 import { MuiRadioButton } from './components/MuiRadioButton';
 import { MuiRating } from './components/MuiRating';
 import { MuiSelect } from './components/MuiSelect';
+import { MuiSpeedDial } from './components/MuiSpeedDial';
 import { MuiTextField } from './components/MuiTextField';
 import { MuiTypography } from './components/MuiTypography';
 
@@ -27,8 +28,9 @@ function App() {
       {/* <MuiCard /> */}
       {/* <MuiAccordion /> */}
       {/* <MuiImageLIst /> */}
-      <MuiNavBar />
-      <MuiDrawer />
+      {/* <MuiNavBar /> */}
+      {/* <MuiDrawer /> */}
+      <MuiSpeedDial />
     </div>
   );
 }
