@@ -9,7 +9,7 @@ export const MuiBadge = () => {
             <MailIcon />
         </Badge>
 
-        <Badge badgeContent={0} color="secondary">
+        <Badge badgeContent={0} color="secondary" showZero>
             <MailIcon />
         </Badge>
 
