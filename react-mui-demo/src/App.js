@@ -4,7 +4,9 @@ import { MuiAccordion } from './components/MuiAccordion';
 import { MuiAutocomplete } from './components/MuiAutocomplete';
 import MuiButton from './components/MuiButton';
 import { MuiCard } from './components/MuiCard';
+import { MuiDrawer } from './components/MuiDrawer';
 import { MuiImageLIst } from './components/MuiImageLIst';
+import { MuiNavBar } from './components/MuiNavBar';
 import { MuiRadioButton } from './components/MuiRadioButton';
 import { MuiRating } from './components/MuiRating';
 import { MuiSelect } from './components/MuiSelect';
@@ -24,7 +26,9 @@ function App() {
       {/* <MuiLayout /> */}
       {/* <MuiCard /> */}
       {/* <MuiAccordion /> */}
-      <MuiImageLIst />
+      {/* <MuiImageLIst /> */}
+      <MuiNavBar />
+      <MuiDrawer />
     </div>
   );
 }

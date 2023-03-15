@@ -1,7 +1,7 @@
 import { ImageList, ImageListItem, Stack } from "@mui/material"
 import { imgData } from "./ImagData";
 
-const liste = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'];
+// Il existe des variante de liste d'images
 
 export const MuiImageLIst = () => {
   return (
