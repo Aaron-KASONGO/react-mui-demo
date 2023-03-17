@@ -10,7 +10,7 @@ import { MuiList } from './components/MuiList';
 // import { MuiCard } from './components/MuiCard';
 // import { MuiDrawer } from './components/MuiDrawer';
 // import { MuiImageLIst } from './components/MuiImageLIst';
-// import { MuiNavBar } from './components/MuiNavBar';
+import { MuiNavBar } from './components/MuiNavBar';
 // import { MuiRadioButton } from './components/MuiRadioButton';
 // import { MuiRating } from './components/MuiRating';
 // import { MuiSelect } from './components/MuiSelect';
@@ -32,13 +32,13 @@ function App() {
       {/* <MuiCard /> */}
       {/* <MuiAccordion /> */}
       {/* <MuiImageLIst /> */}
-      {/* <MuiNavBar /> */}
+      <MuiNavBar />
       {/* <MuiDrawer /> */}
       {/* <MuiSpeedDial /> */}
       {/* <MuiBottomNavigation /> */}
       {/* <MuiAvatar /> */}
       {/* <MuiBadge /> */}
-      <MuiList />
+      {/* <MuiList /> */}
     </div>
   );
 }
